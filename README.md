@@ -33,4 +33,5 @@ except PermissionError as e:
 - **Standalone Mode**: 100% operational without remote dependencies.
 
 ## 📄 Documentation
-For the full Governance Spec and Audit Evidence, visit [nexorian.org](https://nexorian.org).
+- **[Advanced Usage Patterns](docs/USAGE_PATTERNS.md)**: Industrial-grade orchestration examples.
+- **[Nexorian Official Site](https://nexorian.org)**: Governance Specs and Audit Evidence.
