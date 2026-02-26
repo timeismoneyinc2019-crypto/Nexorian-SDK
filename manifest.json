@@ -1,3 +1,7 @@
 {
-    "python\\nexorian.py": "d798c3a0302b3d8c0f929564551b1bedaebc9df7aedb8a25ff747636b99433d9"
+    "manifest.json": "e80bf7e662b532a8456d49bf6fd372f5784eec4f5ce90c4a9f969bd466966c5a",
+    "manifest.json.sha256": "77cd4ae8974cfdd0d05fedbba445301a4b0e8d34340dad747c2f14ff39b0080a",
+    "README.md": "2f4cc6c0feb9b3bb5298a3772207488b89a432bf9680452b408fb2408cdb78f1",
+    "python\\nexorian.py": "d798c3a0302b3d8c0f929564551b1bedaebc9df7aedb8a25ff747636b99433d9",
+    "python\\nexorian.py.sha256": "d9b63c459027be9c649d84b64c355193b0d74454b179be22f447ab62bc76a6df"
 }
