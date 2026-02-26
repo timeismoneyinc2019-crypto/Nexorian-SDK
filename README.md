@@ -1,37 +1,50 @@
-# Nexorian Python SDK (Operational Kernel)
+# Nexorian Operational SDK (v1.0.0)
 
-The Nexorian SDK is a high-fidelity, deterministic governance kernel designed for industrial AI orchestration. Unlike lite wrappers, the Nexorian SDK provides a complete standalone enforcement surface.
+Professional-grade orchestration and governance for Deterministic AI kernels.
 
 ## 📦 Installation
 ```bash
 pip install .
 ```
 
-## 🚀 Quick Start (Operational Kernel)
+## 🚀 Sandbox Operational Demo
+The SDK provides a built-in `LocalProvider` for sandbox testing and reproducibility.
+
 ```python
 from nexorian import NexusKernel
 
-# Initialize a standalone operational kernel
-kernel = NexusKernel(api_key="YOUR_KEY", role="SANDBOX")
+# Initialize an operational sandbox kernel
+kernel = NexusKernel(api_key="SANDBOX_KEY", role="SANDBOX")
 
-# Execute mission-critical logic bound by a Law Envelope
+# Execute a task governed by the FINRA_CT_09 Law Envelope
 try:
     kernel.execute(
-        task="INIT_SEQUENCE",
+        task="DATA_EGRESS",
         envelope="FINRA_CT_09",
-        params={"epoch": 0.1, "epoch_limit": 1.0}
+        params={"epoch": 0.5, "epoch_limit": 1.0}
     )
-    print("Execution Approved & Logged.")
+    print("Governance Check: PROVEN. Instruction Sent.")
 except PermissionError as e:
-    print(f"Execution Vetoed: {e}")
+    print(f"Governance Check: VETOED. {e}")
 ```
 
-## 🛡️ Core Features
-- **Deterministic Compliance Engine (DCE)**: Real-world enforcement of Law Envelopes.
-- **SHA3-256 Audit Ledger**: Immutable, cryptographically chained execution logs.
-- **Zero-Trust Enforcement**: Local kernel validation before any state transition.
-- **Standalone Mode**: 100% operational without remote dependencies.
+## 🛡️ SHA-256 Verification Guide (MANDATORY)
+To ensure the integrity of the project's artifacts (Whitepaper, Thesis, Logs), follow these steps:
 
-## 📄 Documentation
-- **[Advanced Usage Patterns](docs/USAGE_PATTERNS.md)**: Industrial-grade orchestration examples.
-- **[Nexorian Official Site](https://nexorian.org)**: Governance Specs and Audit Evidence.
+1. **Download Artifacts**: Retrieve the desired file from the [Nexorian-Audit](https://github.com/timeismoneyinc2019-crypto/Nexorian-Audit) repository.
+2. **Verify against Manifest**:
+   ```bash
+   # Windows (PowerShell)
+   (Get-FileHash -Path .\FILENAME -Algorithm SHA256).Hash.ToLower()
+   
+   # Linux/macOS
+   sha256sum FILENAME
+   ```
+3. **Cross-Reference**: Compare the resulting hash with the entries in `manifest.json`.
+
+## 🧪 Documentation & Usage
+- **Advanced Patterns**: See `docs/USAGE_PATTERNS.md` for institutional orchestration.
+- **Reproducibility**: See `tests/` for verifiable integration examples.
+
+## ⚖️ Governance Standards
+This SDK adheres to the [Nexorian Calculus of Deterministic Governance](https://nexorian.org). No probabilistic enforcements are used in the core kernel.
